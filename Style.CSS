@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: url(images/bg3.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.form-box{
+    position: relative;
+    height: 650px;
+    width:550px;
+    border:2px solid rgb(47, 72, 88);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-box h2{
+     color:transparent;
+     background:linear-gradient(rgb(255, 0, 0),rgb(231, 108, 52),rgb(210, 0, 35));
+     background-clip: text;
+     text-align: center;
+     font-size: 35px; 
+}
+.form-box .input-box{
+    position:relative;
+    width: 300px ;
+    margin: 20px 0;
+    border-bottom:2px solid  rgb(47, 72, 88) ;
+}
+.form-box .input-box input{
+    height:35px;
+    width:300px;
+    background: transparent;
+    border:none;
+    outline: none;
+    padding: 0px 20px 0px 5px;
+}
+.form-box .input-box ::placeholder{
+    color:aliceblue;
+}
+.btn{
+    background:linear-gradient(rgb(255, 0, 0),rgb(231, 108, 52),rgb(210, 0, 35));
+    width:150px;
+    height:36px;
+    border-radius: 25px;
+    outline: none;
+    border:none;
+    color:white;
+    font-size: 18px;
+    box-shadow: 3px 0 15px rgb(255, 255, 255);
+    cursor: pointer;
+}
+.button{
+    text-align: center;
+   
+}
+
+.genz{
+    background: transparent;
+    border:none;
+    outline: none;
+    padding: 0px 20px 0px 5px;
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+}
+.gender ::placeholder{
+    color:white;
+}
+.gender {
+    color:rgb(47, 72, 88) ;
+    font-weight: bold;
+}
+.group {
+      display: flex;
+      justify-content: space-between;
+}
+.group span a{
+    color:white;
+    text-decoration: none;
+}
+.group a:focus{
+    text-decoration: underline;
+}
