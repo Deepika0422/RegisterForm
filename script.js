@@ -43,4 +43,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
         alert('Please select your gender.');
         event.preventDefault(); 
     }
+     else{
+        alert("Registration Complete");
+    }
 });
