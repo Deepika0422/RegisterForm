@@ -1,6 +1,7 @@
 document.getElementById('form').addEventListener('submit', function(event) {
     var username = document.getElementById('name').value;
     var password = document.getElementById('password').value;
+    var cpassword = document.getElementById('cpassword').value;
     var email = document.getElementById('email').value;
     var phone = document.getElementById('phone').value;
     const male_id=document.getElementById('male');
@@ -16,6 +17,12 @@ document.getElementById('form').addEventListener('submit', function(event) {
     if (password.length < 8) {
         alert('Password must be at least 8 characters long.');
         event.preventDefault();
+        return;
+    }
+
+    if(cpassword!=password){
+        alert('Password do not match');
+        event.preventDefault(); 
         return;
     }
 
